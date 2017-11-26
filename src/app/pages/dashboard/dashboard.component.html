@@ -1,17 +1,18 @@
 <div class="row">
+
   <div class="col-xxxl-3 col-md-6">
-    <ngx-status-card title="Light" type="primary">
-      <i class="nb-lightbulb"></i>
+    <ngx-status-card [on]="false" title="Email notification" type="primary">
+      <i class="nb-compose"></i>
     </ngx-status-card>
   </div>
 
   <div class="col-xxxl-3 col-md-6">
-    <ngx-status-card title="Roller Shades" type="success">
-      <i class="nb-roller-shades"></i>
+    <ngx-status-card [on]="true" title="Push notification" type="success">
+      <i class="nb-notifications"></i>
     </ngx-status-card>
   </div>
 
-  <div class="col-xxxl-3 col-md-6">
+  <!--   <div class="col-xxxl-3 col-md-6">
     <ngx-status-card title="Wireless Audio" type="info">
       <i class="nb-audio"></i>
     </ngx-status-card>
@@ -21,10 +22,23 @@
     <ngx-status-card title="Coffee Maker" type="warning">
       <i class="nb-coffee-maker"></i>
     </ngx-status-card>
-  </div>
+  </div> -->
+
 </div>
 
-<div class="row">
+<nb-card>
+  <nb-card-header>
+    HoneyPot's
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
+
+
+<!-- <div class="row">
   <div class="col-xxxl-3 col-xxl-4 col-lg-5 col-md-6">
     <ngx-temperature></ngx-temperature>
   </div>
@@ -58,3 +72,4 @@
     <ngx-security-cameras></ngx-security-cameras>
   </div>
 </div>
+ -->

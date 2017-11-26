@@ -8,7 +8,7 @@ export interface AppConfig {
 }
 
 export const API_DI_CONFIG: AppConfig = {
-  apiEndpoint: 'http://',
+  apiEndpoint: 'https://https://honey-net-api.herokuapp.com',
   title: 'Base Api'
 }
 

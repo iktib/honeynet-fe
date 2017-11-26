@@ -19,12 +19,17 @@ import { SolarComponent } from './solar/solar.component'
 import { PlayerComponent } from './rooms/player/player.component'
 import { TrafficComponent } from './traffic/traffic.component'
 import { TrafficChartComponent } from './traffic/traffic-chart.component'
+import { TablesModule } from '../tables/tables.module';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 
 @NgModule({
   imports: [
     ThemeModule,
     AngularEchartsModule,
+    Ng2SmartTableModule,
+    
+    TablesModule
   ],
   declarations: [
     DashboardComponent,

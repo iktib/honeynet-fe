@@ -26,6 +26,10 @@ export class AppComponent implements OnInit {
   useJwtHelper() {
     const token = localStorage.getItem('token')
 
+    if (token) {
+      
+    }
+
     console.log(
       this.jwtHelper.decodeToken(token),
       this.jwtHelper.getTokenExpirationDate(token),
